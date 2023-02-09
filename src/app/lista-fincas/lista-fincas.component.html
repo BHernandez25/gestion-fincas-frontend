@@ -1,0 +1,44 @@
+<h2>Lista fincas</h2>
+<table class="table table-striped table-bordered text-center">
+  <thead class="table bg-warning">
+    <tr>
+      <th>Clave</th>
+			<th>Nombre</th>
+			<th>Numero hectareas</th>
+			<th>Metros cuadrados</th>
+			<th>Propietario</th>
+			<th>Capataz</th>
+      <th>Pais</th>
+			<th>Departamento</th>
+			<th>ciudad</th>
+			<th>Produce leche</th>
+			<th>Produce cereales</th>
+			<th>Produce frutas</th>
+			<th>Produce verduras</th>
+			<th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let finca of fincas">
+      <td>{{finca.clave}}</td>
+      <td>{{finca.nombre}}</td>
+      <td>{{finca.numHectareas }}</td>
+      <td>{{finca.metrosCuadrados}}</td>
+      <td>{{finca.propietario}}</td>
+      <td>{{finca.capataz}}</td>
+      <td>{{finca.pais}}</td>
+      <td>{{finca.departamento}}</td>
+      <td>{{finca.ciudad}}</td>
+      <td>{{finca.siProduceLeche}}</td>
+      <td>{{finca.siProduceCereales}}</td>
+      <td>{{finca.siProduceFrutas}}</td>
+      <td>{{finca.siProduceVerduras}}</td>
+      <td>
+        <button (click)="actualizarFinca(finca.id)" class="btn btn-info">Editar</button>
+        <button (click)="eliminarFinca(finca.id)" class="btn btn-danger mt-2">Eliminar</button>
+        <button (click)="verDetallesDelaFinca(finca.id)" class="btn btn-primary mt-2">Detalles</button>
+      </td>
+
+    </tr>
+  </tbody>
+</table>

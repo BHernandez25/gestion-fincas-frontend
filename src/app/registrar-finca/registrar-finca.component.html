@@ -1,0 +1,73 @@
+<div class="col-md-6 offset-md-3">
+  <h3 class="text-center">Registro de finca</h3>
+  <form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label>Clave : </label>
+    <input type="number" class="form-control" id="clave" [(ngModel)]=" finca.clave" name="clave">
+  </div>
+
+  <div class="form-group">
+    <label>Nombre : </label>
+    <input type="text" class="form-control" id="nombre" [(ngModel)]=" finca.nombre" name="nombre">
+  </div>
+
+  <div class="form-group">
+    <label>num Hectareas: </label>
+    <input type="number" class="form-control" id="numHectareas" [(ngModel)]=" finca.numHectareas" name="numHectareas">
+  </div>
+
+  <div class="form-group">
+    <label>Metros cuadrados : </label>
+    <input type="number" class="form-control" id="metrosCuadrados" [(ngModel)]=" finca.metrosCuadrados" name="metrosCuadrados">
+  </div>
+
+  <div class="form-group">
+    <label>propietario : </label>
+    <input type="text" class="form-control" id="propietario" [(ngModel)]=" finca.propietario" name="propietario">
+  </div>
+
+  <div class="form-group">
+    <label>capataz : </label>
+    <input type="text" class="form-control" id="capataz" [(ngModel)]=" finca.capataz" name="capataz">
+  </div>
+
+  <div class="form-group">
+    <label>pais : </label>
+    <input type="text" class="form-control" id="pais" [(ngModel)]=" finca.pais" name="pais">
+  </div>
+
+
+  <div class="form-group">
+    <label>Departamento : </label>
+    <input type="text" class="form-control" id="departamento" [(ngModel)]=" finca.departamento" name="departamento">
+  </div>
+
+  <div class="form-group">
+    <label>ciudad : </label>
+    <input type="text" class="form-control" id="ciudad" [(ngModel)]=" finca.ciudad" name="ciudad">
+  </div>
+
+  <div class="form-group">
+    <label>Produce leche: </label>
+    <input type="text" class="form-control" id="siProduceLeche" [(ngModel)]=" finca.siProduceLeche" name="siProduceLeche">
+  </div>
+
+  <div class="form-group">
+    <label>Produce cereales : </label>
+    <input type="text" class="form-control" id="siProduceCereales" [(ngModel)]=" finca.siProduceCereales" name="siProduceCereales">
+  </div>
+
+  <div class="form-group">
+    <label>Produce frutas : </label>
+    <input type="text" class="form-control" id="siProduceFrutas" [(ngModel)]=" finca.siProduceFrutas" name="siProduceFrutas">
+  </div>
+
+  <div class="form-group">
+    <label>Produce verduras: </label>
+    <input type="text" class="form-control" id="siProduceVerduras" [(ngModel)]=" finca.siProduceVerduras" name="siProduceVerduras">
+  </div>
+
+  <button class="btn btn-success">Guardar</button>
+</form>
+</div>
+<br>
